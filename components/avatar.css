@@ -1,0 +1,34 @@
+.avatar-xsm {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+}
+
+.avatar-sm {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+}
+
+.avatar-md {
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+}
+
+.avatar-lg {
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+}
+
+.avatar-xlg {
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+}

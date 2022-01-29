@@ -48,6 +48,10 @@ a {
     background: #FFC600;
 }
 
+.open {
+    margin-right: 2rem;
+}
+
 .navbar-left>a {
     font-size: 1.5rem;
     transition: all 0.2s ease-in;
@@ -93,6 +97,7 @@ a {
     width: 15rem;
     background: #fff;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    display: none;
 }
 
 .sidebar-head {
@@ -227,6 +232,48 @@ a {
     font-size: 1.25rem;
 }
 
+/* Docs Content */
+
+.documentation-area {
+    margin-top: 2rem;
+    padding: 10px 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.container {
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.component-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.component-container>h1 {
+    border-bottom: 2px solid #FFC600;
+}
+
+.showcase {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 10px;
+}
+
+.code-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
 /* Code */
 
 .code-box {
@@ -240,11 +287,17 @@ a {
 .code {
     overflow: auto;
     display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.line {
+    display: flex;
     flex-flow: row nowrap;
     align-items: center;
 }
 
-.code-box>.code>span {
+.code-box>.code>.line>span {
     font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
     white-space: pre;
 }
@@ -259,6 +312,10 @@ a {
 
 .attr-content {
     color: #d73038;
+}
+
+.comment {
+    color: lightseagreen;
 }
 
 /* Footer */
