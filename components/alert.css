@@ -1,0 +1,39 @@
+.alert {
+    min-width: 25rem;
+    padding: 0.625rem 1.5rem;
+    border: 2px solid #000;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.alert > i {
+    margin-right: 0.5rem;
+}
+
+.alert-danger {
+    background: #FF6464;
+    color: #fff;
+    border: none;
+}
+
+.alert-warning {
+    background: #FFE162;
+    color: #fff;
+    border: none;
+}
+
+.alert-success {
+    background: #91C483;
+    color: #fff;
+    border: none;
+}
+
+.alert-dark {
+    background: #111;
+    color: #fff;
+    border: none;
+}
+
+.alert-light {
+    background: #ccc;
+}
