@@ -1,3 +1,11 @@
+:root {
+    --danger-color: #FF6464;
+    --success-color: #91C483;
+    --warning-color: #FFE162;
+    --dark-color: #111;
+    --light-color: #ccc;
+}
+
 .alert {
     min-width: 25rem;
     padding: 0.625rem 1.5rem;
@@ -11,29 +19,29 @@
 }
 
 .alert-danger {
-    background: #FF6464;
+    background: var(--danger-color);
     color: #fff;
     border: none;
 }
 
 .alert-warning {
-    background: #FFE162;
+    background: var(--warning-color);
     color: #fff;
     border: none;
 }
 
 .alert-success {
-    background: #91C483;
+    background: var(--success-color);
     color: #fff;
     border: none;
 }
 
 .alert-dark {
-    background: #111;
+    background: var(--dark-color);
     color: #fff;
     border: none;
 }
 
 .alert-light {
-    background: #ccc;
+    background: var(--light-color);
 }

@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+:root {
+    --primary-color: #FFC600;
+    --element-color: #2f6f9f;
+    --element-content-color: #000;
+    --attribute-color: #006ee0;
+    --attribute-content-color: #d73038;
+    --comment-color: #20b2aa;
+    --code-box-font: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -20,7 +30,7 @@ a {
 
 .header {
     position: relative;
-    background: #FFC600;
+    background: var(--primary-color);
 }
 
 .header::after {
@@ -45,7 +55,7 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    background: #FFC600;
+    background: var(--primary-color);
 }
 
 .open {
@@ -105,7 +115,7 @@ a {
     align-items: center;
     justify-content: flex-end;
     padding: 0.5rem;
-    background: #FFC600;
+    background: var(--primary-color);
 }
 
 .sidebar-body {
@@ -126,7 +136,7 @@ a {
 
 
 .links>a:hover {
-    border-bottom: 2px solid #FFC600;
+    border-bottom: 2px solid var(--primary-color);
 }
 
 /* Header Content */
@@ -165,7 +175,7 @@ a {
     padding: 0.5rem 0.7rem;
     background: #fff;
     border-radius: 10px;
-    color: #FFC600;
+    color: var(--primary-color);
     font-weight: 700;
     transition: all 0.2s ease-in;
     font-size: 1.5rem;
@@ -257,7 +267,7 @@ a {
 }
 
 .component-container>h1 {
-    border-bottom: 2px solid #FFC600;
+    border-bottom: 2px solid var(--primary-color);
 }
 
 .showcase {
@@ -294,29 +304,34 @@ a {
     align-items: center;
 }
 
-.code-box>.code>.line>span {
-    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+.element {
+    color: var(--element-color);
+    font-family: var(--code-box-font);
     white-space: pre;
 }
 
-.element {
-    color: #2f6f9f;
-}
-
 .element-content {
-    color: black;
+    color: var(--element-content-color);
+    font-family: var(--code-box-font);
+    white-space: pre;
 }
 
 .attribute {
-    color: #006ee0;
+    color: var(--attribute-color);
+    font-family: var(--code-box-font);
+    white-space: pre;
 }
 
-.attr-content {
-    color: #d73038;
+.attribute-content {
+    color: var(--attribute-content-color);
+    font-family: var(--code-box-font);
+    white-space: pre;
 }
 
 .comment {
-    color: lightseagreen;
+    color: var(--comment-color);
+    font-family: var(--code-box-font);
+    white-space: pre;
 }
 
 /* Footer */
@@ -327,7 +342,7 @@ a {
     align-items: center;
     gap: 1rem;
     padding: 20px 20px;
-    background: #FFC600;
+    background: var(--primary-color);
     margin-top: 3rem;
 }
 
