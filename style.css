@@ -171,7 +171,7 @@ a {
     gap: 1rem;
 }
 
-.btn {
+.button {
     padding: 0.5rem 0.7rem;
     background: #fff;
     border-radius: 10px;
@@ -181,7 +181,7 @@ a {
     font-size: 1.5rem;
 }
 
-.btn:hover {
+.button:hover {
     transform: scale(1.1);
 }
 
@@ -302,6 +302,18 @@ a {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+}
+
+.pl-1 {
+    padding-left: 1rem;
+}
+
+.pl-2 {
+    padding-left: 2rem;
+}
+
+.pl-3 {
+    padding-left: 3rem;
 }
 
 .element {

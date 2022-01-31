@@ -1,4 +1,5 @@
 .avatar-xsm {
+    box-sizing: content-box;
     border-radius: 50%;
     width: 2rem;
     height: 2rem;
@@ -6,6 +7,7 @@
 }
 
 .avatar-sm {
+    box-sizing: content-box;
     border-radius: 50%;
     width: 3rem;
     height: 3rem;
@@ -13,6 +15,7 @@
 }
 
 .avatar-md {
+    box-sizing: content-box;
     border-radius: 50%;
     width: 4rem;
     height: 4rem;
@@ -20,6 +23,7 @@
 }
 
 .avatar-lg {
+    box-sizing: content-box;
     border-radius: 50%;
     width: 5rem;
     height: 5rem;
@@ -27,6 +31,7 @@
 }
 
 .avatar-xlg {
+    box-sizing: content-box;
     border-radius: 50%;
     width: 6rem;
     height: 6rem;
