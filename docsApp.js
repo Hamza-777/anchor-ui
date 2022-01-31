@@ -18,3 +18,17 @@ open.addEventListener('click', e => {
 close.addEventListener('click', e => {
     sidebar.style.display = 'none';
 });
+
+// Input validation
+const passwordInput = document.querySelector('.inp-password');
+const validationMessage = document.querySelector('.validation-message');
+
+passwordInput.addEventListener('input', e => {
+    if(passwordInput.value.length < 7) {
+        passwordInput.style.border = '2px solid red';
+        validationMessage.style.display = 'block';
+    } else {
+        passwordInput.style.border = '2px solid green';
+        validationMessage.style.display = 'none';
+    }
+});

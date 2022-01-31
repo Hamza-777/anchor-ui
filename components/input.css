@@ -1,0 +1,20 @@
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.inp,
+.textarea {
+    padding: 5px 7px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    width: 25rem;
+    border: 2px solid #000;
+}
+
+.validation-message {
+    color: #ff0000;
+    display: none;
+}
