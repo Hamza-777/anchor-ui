@@ -21,6 +21,10 @@ html {
     font-size: 100%;
 }
 
+body {
+    scroll-behavior: smooth;
+}
+
 a {
     color: #000;
     text-decoration: none;
@@ -277,7 +281,8 @@ a {
     padding: 10px;
 }
 
-#alert > .showcase {
+#alert > .showcase,
+#input > .showcase {
     flex-direction: column;
 }
 
