@@ -2,6 +2,7 @@ const darkMode = document.querySelector('.dark-mode');
 const darkBtn = document.querySelector('.changer');
 const open = document.querySelector('.open');
 const close = document.querySelector('.close');
+const navbar = document.querySelector('.navbar');
 const sidebar = document.querySelector('.sidebar');
 
 darkMode.addEventListener('click', e => {
@@ -9,6 +10,8 @@ darkMode.addEventListener('click', e => {
     darkBtn.classList.toggle('fa-sun');
     darkBtn.classList.toggle('dark');
     darkBtn.classList.toggle('light');
+    navbar.classList.toggle('dark-nav');
+    sidebar.classList.toggle('dark-sidebar');
 });
 
 open.addEventListener('click', e => {
