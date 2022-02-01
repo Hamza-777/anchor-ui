@@ -2,6 +2,7 @@
 
 :root {
     --primary-color: #FFC600;
+    --dark-primary-color: #7A0BC0;
     --element-color: #2f6f9f;
     --element-content-color: #000;
     --attribute-color: #006ee0;
@@ -19,9 +20,6 @@
 
 html {
     font-size: 100%;
-}
-
-body {
     scroll-behavior: smooth;
 }
 
@@ -53,6 +51,14 @@ a {
 }
 
 /* Navbar */
+
+#docs-nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
 
 .navbar {
     display: flex;
@@ -105,12 +111,13 @@ a {
 
 .sidebar {
     position: fixed;
-    top: 0;
+    top: 74.4px;
     left: 0;
     bottom: 0;
     width: 15rem;
     background: #fff;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    z-index: 1;
     display: none;
 }
 
@@ -118,13 +125,11 @@ a {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 0.5rem;
-    background: var(--primary-color);
+    padding: 0.2rem;
 }
 
 .sidebar-body {
     padding: 0.5rem;
-    margin-top: 3rem;
 }
 
 .links {
@@ -134,7 +139,7 @@ a {
     gap: 2rem;
 }
 
-.links>a {
+.links > a {
     border-bottom: 2px solid transparent;
 }
 
@@ -255,6 +260,7 @@ a {
     flex-flow: column;
     align-items: flex-start;
     gap: 3rem;
+    margin-top: 74.4px;
 }
 
 .container {
@@ -289,11 +295,13 @@ a {
 /* Code */
 
 .code-box {
-    max-width: 75vw;
+    width: 50rem;
+    max-height: 25rem;
     background: #eee;
     padding: 1.5rem 1rem;
     border-radius: 10px;
     margin-top: 1rem;
+    overflow-y: auto;
 }
 
 .code {
@@ -309,46 +317,41 @@ a {
     align-items: center;
 }
 
+.line > span {
+    font-family: var(--code-box-font);
+    white-space: pre;
+}
+
 .pl-1 {
-    padding-left: 1rem;
+    padding-left: 1.5rem;
 }
 
 .pl-2 {
-    padding-left: 2rem;
+    padding-left: 3rem;
 }
 
 .pl-3 {
-    padding-left: 3rem;
+    padding-left: 4.5rem;
 }
 
 .element {
     color: var(--element-color);
-    font-family: var(--code-box-font);
-    white-space: pre;
 }
 
 .element-content {
     color: var(--element-content-color);
-    font-family: var(--code-box-font);
-    white-space: pre;
 }
 
 .attribute {
     color: var(--attribute-color);
-    font-family: var(--code-box-font);
-    white-space: pre;
 }
 
 .attribute-content {
     color: var(--attribute-content-color);
-    font-family: var(--code-box-font);
-    white-space: pre;
 }
 
 .comment {
     color: var(--comment-color);
-    font-family: var(--code-box-font);
-    white-space: pre;
 }
 
 /* Footer */
@@ -383,4 +386,40 @@ a {
 
 .footer-mid {
     font-size: 0.9rem;
+}
+
+@media screen and (max-width: 880px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    /* Sidebar */
+
+    .sidebar {
+        top: 54.4px;
+    }
+
+    /* Docs Content */
+
+    #card > .showcase {
+        flex-direction: column;
+    }
+
+    /* Code */
+
+    .code-box {
+        width: 30rem;
+    }
+
+    /* Header Content */
+
+    .header-content {
+        flex-flow: column;
+    }
+
+    .header-content-left,
+    .header-content-right {
+        flex: 1;
+        width: 100%;
+    }
 }
