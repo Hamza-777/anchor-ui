@@ -4,14 +4,26 @@ const open = document.querySelector('.open');
 const close = document.querySelector('.close');
 const navbar = document.querySelector('.navbar');
 const sidebar = document.querySelector('.sidebar');
+const footer = document.querySelector('.footer');
+const body = document.querySelector('body');
+const codeboxes = document.querySelectorAll('.code-box');
+const componentContainers = document.querySelectorAll('.component-container');
 
 darkMode.addEventListener('click', e => {
     darkBtn.classList.toggle('fa-moon');
     darkBtn.classList.toggle('fa-sun');
     darkBtn.classList.toggle('dark');
     darkBtn.classList.toggle('light');
+    body.classList.toggle('dark-body');
     navbar.classList.toggle('dark-nav');
     sidebar.classList.toggle('dark-sidebar');
+    footer.classList.toggle('dark-foot');
+    codeboxes.forEach(codebox => {
+        codebox.classList.toggle('dark-codebox');
+    });
+    componentContainers.forEach(componentContainer => {
+        componentContainer.classList.toggle('dark-container');
+    });
 });
 
 open.addEventListener('click', e => {

@@ -2,13 +2,15 @@
 
 :root {
     --primary-color: #FFC600;
-    --dark-primary-color: #7A0BC0;
+    --dark-primary-color: #4C0027;
+    --dark-background: #0F0E0E;
+    --dark-code-box: #323232;
     --element-color: #2f6f9f;
-    --element-content-color: #000;
     --attribute-color: #006ee0;
     --attribute-content-color: #d73038;
     --comment-color: #20b2aa;
     --code-box-font: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    --default-transition: all 0.2s ease-in;
 }
 
 * {
@@ -23,6 +25,17 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background: #fff;
+    color: #000;
+    transition: var(--default-transition);
+}
+
+.dark-body {
+    background: var(--dark-background);
+    color: #fff;
+}
+
 a {
     color: #000;
     text-decoration: none;
@@ -33,6 +46,11 @@ a {
 .header {
     position: relative;
     background: var(--primary-color);
+    transition: var(--default-transition);
+}
+
+.dark-head {
+    background: var(--dark-primary-color);
 }
 
 .header::after {
@@ -48,6 +66,11 @@ a {
     left: 0;
     right: 0;
     z-index: 1;
+    transition: var(--default-transition);
+}
+
+.dark-head::after {
+    background: inherit;
 }
 
 /* Navbar */
@@ -66,10 +89,16 @@ a {
     justify-content: space-between;
     padding: 10px 20px;
     background: var(--primary-color);
+    transition: var(--default-transition);
 }
 
 .dark-nav {
     background: var(--dark-primary-color);
+}
+
+.dark-nav i {
+    color: #000;
+    transition: var(--default-transition);
 }
 
 .dark-nav i {
@@ -127,6 +156,7 @@ a {
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     z-index: 1;
     display: none;
+    transition: var(--default-transition);
 }
 
 .dark-sidebar {
@@ -154,6 +184,7 @@ a {
 
 .links > a {
     border-bottom: 2px solid transparent;
+    transition: var(--default-transition);
 }
 
 .dark-sidebar > .sidebar-body > .links > a {
@@ -162,6 +193,7 @@ a {
 
 .links>a:hover {
     border-bottom: 2px solid var(--primary-color);
+    transition: var(--default-transition);
 }
 
 .dark-sidebar > .sidebar-body > .links > a:hover {
@@ -191,6 +223,11 @@ a {
     font-size: 1.25rem;
     text-align: justify;
     text-align-last: center;
+    transition: var(--default-transition);
+}
+
+.dark-head > .header-content > .header-content-left > .desc > p {
+    color: #fff;
 }
 
 .buttons {
@@ -208,6 +245,11 @@ a {
     font-weight: 700;
     transition: all 0.2s ease-in;
     font-size: 1.5rem;
+    transition: var(--default-transition);
+}
+
+.dark-head > .header-content > .header-content-left > .buttons > .button {
+    color: var(--dark-primary-color);
 }
 
 .button:hover {
@@ -217,6 +259,11 @@ a {
 .to-docs {
     background: transparent;
     border: 2px solid #fff;
+    color: #fff;
+    transition: var(--default-transition);
+}
+
+.dark-head > .header-content > .header-content-left > .buttons > .to-docs {
     color: #fff;
 }
 
@@ -232,6 +279,7 @@ a {
     height: 16rem;
     border-radius: 50%;
     background: #fff;
+    color: #000;
     display: inherit;
     align-items: center;
     justify-content: center;
@@ -267,20 +315,28 @@ a {
     gap: 0.5rem;
 }
 
-.main-content>p {
+.main-content > h1 {
+    border-bottom: 2px solid var(--primary-color);
+    transition: var(--default-transition);
+}
+
+.dark-main > h1 {
+    border-bottom: 2px solid var(--dark-primary-color);
+}
+
+.main-content > p {
     font-size: 1.25rem;
 }
 
 /* Docs Content */
 
 .documentation-area {
-    margin-top: 2rem;
     padding: 10px 20px;
     display: flex;
     flex-flow: column;
     align-items: flex-start;
     gap: 3rem;
-    margin-top: 74.4px;
+    margin-top: calc(74.4px + 2rem);
 }
 
 .container {
@@ -296,15 +352,23 @@ a {
     gap: 2rem;
 }
 
-.component-container>h1 {
+.component-container > h1 {
     border-bottom: 2px solid var(--primary-color);
+}
+
+.dark-container > h1 {
+    border-bottom: 2px solid var(--dark-primary-color);
 }
 
 .showcase {
     display: flex;
     align-items: center;
     gap: 2rem;
-    padding: 10px;
+    padding: 25px;
+    background: #fff;
+    color: #000;
+    border-radius: 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 #alert > .showcase,
@@ -322,6 +386,14 @@ a {
     border-radius: 10px;
     margin-top: 1rem;
     overflow-y: auto;
+    transition: var(--default-transition);
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.dark-codebox {
+    background: var(--dark-code-box);
+    color: #ccc;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
 
 .code {
@@ -329,6 +401,11 @@ a {
     display: flex;
     flex-direction: column;
     gap: 0.1rem;
+    padding: 1rem;
+}
+
+.code::-webkit-scrollbar {
+    width: 0.875rem;
 }
 
 .line {
@@ -358,10 +435,6 @@ a {
     color: var(--element-color);
 }
 
-.element-content {
-    color: var(--element-content-color);
-}
-
 .attribute {
     color: var(--attribute-color);
 }
@@ -384,11 +457,20 @@ a {
     padding: 20px 20px;
     background: var(--primary-color);
     margin-top: 3rem;
+    transition: var(--default-transition);
 }
 
-.footer-left>a {
+.dark-foot {
+    background: var(--dark-primary-color);
+}
+
+.footer-left > a {
     font-size: 1.5rem;
-    transition: all 0.2s ease-in;
+    transition: var(--default-transition);
+}
+
+.dark-foot > .footer-left > a {
+    color: #fff;
 }
 
 .footer-left>a:hover {
@@ -404,8 +486,43 @@ a {
     gap: 10px;
 }
 
+.footer-right > .icon > i {
+    color: #000;
+    transition: var(--default-transition);
+}
+
+.dark-foot > .footer-right > .icon > i {
+    color: #fff;
+}
+
 .footer-mid {
     font-size: 0.9rem;
+}
+
+.footer-mid > p {
+    color: #000;
+    transition: var(--default-transition);
+}
+
+.dark-foot > .footer-mid > p {
+    color: #fff;
+}
+
+/* Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.875rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #777;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #222;
 }
 
 @media screen and (max-width: 900px) {
@@ -420,6 +537,9 @@ a {
     }
 
     /* Docs Content */
+    .documentation-area {
+        margin-top: calc(64px + 2rem);
+    }
 
     #card > .showcase {
         flex-direction: column;
@@ -462,6 +582,10 @@ a {
     }
 
     /* Docs Content */
+
+    .documentation-area {
+        margin-top: calc(54.4px + 2rem);
+    }
 
     #card > .showcase {
         flex-direction: column;
