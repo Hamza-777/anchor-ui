@@ -1,8 +1,8 @@
 .nav-container {
     position: relative;
-    max-width: 900px;
-    height: 300px;
-    margin: 50px auto;
+    max-width: 56.25rem;
+    height: 18.75rem;
+    margin: 3rem auto;
     overflow-y: scroll;
     background: #eee;
 }
@@ -24,7 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 15px;
+    padding: 0.625rem 1rem;
     background: #FFC600;
 }
 
@@ -32,7 +32,7 @@
 .nav-right {
     display: inherit;
     align-items: center;
-    gap: 25px;
+    gap: 1.5rem;
 }
 
 .nav-icon {
