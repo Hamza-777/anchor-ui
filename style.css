@@ -179,7 +179,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 0.875rem;
 }
 
 .links > a {
@@ -221,7 +221,7 @@ a {
 .desc>p {
     color: #000;
     font-size: 1.25rem;
-    text-align: justify;
+    text-align: center;
     text-align-last: center;
     transition: var(--default-transition);
 }
@@ -245,6 +245,7 @@ a {
     font-weight: 700;
     transition: all 0.2s ease-in;
     font-size: 1.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     transition: var(--default-transition);
 }
 
@@ -362,6 +363,7 @@ a {
 
 .showcase {
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     gap: 2rem;
     padding: 25px;
@@ -372,8 +374,14 @@ a {
 }
 
 #alert > .showcase,
-#input > .showcase {
+#input > .showcase,
+#texts > .showcase,
+#lists > .showcase {
     flex-direction: column;
+}
+
+.aligned-texts {
+    width: 50rem;
 }
 
 /* Code */
@@ -429,6 +437,10 @@ a {
 
 .pl-3 {
     padding-left: 4.5rem;
+}
+
+.pl-4 {
+    padding-left: 6rem;
 }
 
 .element {
@@ -551,6 +563,10 @@ a {
         width: 42.5rem;
     }
 
+    .aligned-texts {
+        width: 42.5rem;
+    }
+
     /* Header Content */
 
     .header-content {
@@ -594,6 +610,10 @@ a {
     /* Code */
 
     .code-box {
+        width: 30rem;
+    }
+
+    .aligned-texts {
         width: 30rem;
     }
 

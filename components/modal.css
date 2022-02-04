@@ -1,0 +1,58 @@
+#opener {
+    background: rgba(139, 78, 219, 0.178);
+}
+
+.modal-box {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+    display: none;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+    border-radius: 8px;
+    background: #fff;
+    width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.modal-head {
+    width: 100%;
+}
+
+.modal-head > p {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.buttons {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+
+#opener,
+.action {
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #8b4edb;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+#opener:hover,
+.action:hover {
+    background: rgba(0, 0, 0, .15);
+}
