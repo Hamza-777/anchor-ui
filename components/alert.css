@@ -1,7 +1,7 @@
 :root {
     --danger-color: #FF6464;
     --success-color: #91C483;
-    --warning-color: #FFE162;
+    --warning-color: #FFCC1D;
     --dark-color: #111;
     --light-color: #ccc;
 }
@@ -44,4 +44,18 @@
 
 .alert-light {
     background: var(--light-color);
+}
+
+.alert-dismiss {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.alert-dismiss > i {
+    cursor: pointer;
+}
+
+.alert-dismiss > i:hover {
+    transform: scale(1.1);
 }

@@ -1,0 +1,71 @@
+/* Normal Headings */
+
+.h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.h3 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.h4 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.h5 {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.h6 {
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+/* Other Text Utilities */
+
+.first-cap::first-letter {
+    font-size: 150%;
+}
+
+.grey {
+    color: #666;
+}
+
+.para {
+    font-size: 1rem;
+    line-height: 1.1;
+}
+
+.small-text {
+    font-size: 0.875rem;
+}
+
+.center-text {
+    width: 100%;
+    text-align: center;
+}
+
+.left-text {
+    width: 100%;
+    text-align: left;
+}
+
+.right-text {
+    width: 100%;
+    text-align: right;
+}

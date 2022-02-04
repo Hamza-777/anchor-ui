@@ -166,8 +166,15 @@ img {
 
 .overlay-text {
     position: absolute;
-    bottom: 3rem;
-    left: 1rem;
+    inset: 0;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, .1);
+}
+
+.overlay-text:hover {
+    opacity: 1;
 }
 
 .card-text {

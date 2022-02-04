@@ -16,13 +16,16 @@
         </div>
         <div class="sidebar-body">
             <div class="links">
-                <a href="#avatar">Avatar</a>
-                <a href="#alert">Alert</a>
-                <a href="#badge">Badge</a>
-                <a href="#button">Button</a>
-                <a href="#card">Card</a>
-                <a href="#image">Image</a>
-                <a href="#input">Input</a>
+                <a href="#avatar">Avatars</a>
+                <a href="#alert">Alerts</a>
+                <a href="#badge">Badges</a>
+                <a href="#button">Buttons</a>
+                <a href="#card">Cards</a>
+                <a href="#image">Images</a>
+                <a href="#input">Inputs</a>
+                <a href="#lists">Lists</a>
+                <a href="#navigations">Navigations</a>
+                <a href="#texts">Text Utilities</a>
             </div>
         </div>
     </aside>
@@ -145,6 +148,7 @@
             <div class="component-container" id="alert">
                 <h1>ALERTS</h1>
                 <p>Alerts are used to give status, feedback or information to the users based on certain action performed with a descriptive message.</p>
+                <h3>Simple Alerts and Alert with an icon</h3>
                 <div class="showcase">
                     <div class="alert">Simple Alert</div>
                     <div class="alert alert-danger">Danger Alert</div>
@@ -260,6 +264,91 @@
                             <span class="symbol">/</span>
                             <span class="element">div</span>
                             <span class="symbol">></span>
+                        </div>
+                    </div>
+                </div>
+                <h3>Alert with dismiss</h3>
+                <div class="showcase">
+                    <div class="alert alert-dismiss"><span>Dismiss Alert</span><i class="fas fa-times remove-alert"></i></div>
+                </div>
+                <div class="code-box">
+                    <div class="code">
+                        <div class="line">
+                            <span class="comment">/* Alert with dismiss */</span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol"><</span>
+                            <span class="element">div </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"alert alert-dismiss"</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="element">span</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Dismiss Alert</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">span</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="element">i </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"fas fa-times remove-alert"</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">i</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">div</span>
+                            <span class="symbol">></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box">
+                    <div class="code">
+                        <div class="line">
+                            <span class="comment">// Include this JavaScript for alert dismiss</span>
+                        </div>
+                        <div class="line">
+                            <span class="element">const </span>
+                            <span class="attribute">removeAlert </span>
+                            <span class="symbol">=</span>
+                            <span class="attribute"> document.querySelector</span>
+                            <span class="symbol">(</span>
+                            <span class="attribute-content">".remove-alert"</span>
+                            <span class="symbol">)</span>
+                            <span class="symbol">;</span>
+                        </div>
+                        <div class="line">
+                            <span class="element">const </span>
+                            <span class="attribute">dismissAlert </span>
+                            <span class="symbol">=</span>
+                            <span class="attribute"> document.querySelector</span>
+                            <span class="symbol">(</span>
+                            <span class="attribute-content">".alert-dismiss"</span>
+                            <span class="symbol">)</span>
+                            <span class="symbol">;</span>
+                        </div>
+                        <div class="line">
+                            <span class="attribute">removeAlert.addEventListener</span>
+                            <span class="symbol">(</span>
+                            <span class="attribute-content">"click"</span>
+                            <span class="symbol">,</span>
+                            <span class="element"> e </span>
+                            <span class="symbol">=> {</span>
+                        </div>
+                        <div class="line pl-1">
+                            <span class="attribute">dismissAlert.style.display </span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content"> "none"</span>
+                            <span class="symbol">;</span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol">});</span>
                         </div>
                     </div>
                 </div>
@@ -972,28 +1061,6 @@
                             <span class="element">div</span>
                             <span class="symbol">></span>
                         </div>
-                        <div class="line pl-3">
-                            <span class="symbol"><</span>
-                            <span class="element">div </span>
-                            <span class="attribute">class</span>
-                            <span class="symbol">=</span>
-                            <span class="attribute-content">"icon-container"</span>
-                            <span class="symbol">></span>
-                            <span class="symbol"><</span>
-                            <span class="element">i </span>
-                            <span class="attribute">class</span>
-                            <span class="symbol">=</span>
-                            <span class="attribute-content">"far fa-ellipsis-v"</span>
-                            <span class="symbol">></span>
-                            <span class="symbol"><</span>
-                            <span class="symbol">/</span>
-                            <span class="element">i</span>
-                            <span class="symbol">></span>
-                            <span class="symbol"><</span>
-                            <span class="symbol">/</span>
-                            <span class="element">div</span>
-                            <span class="symbol">></span>
-                        </div>
                         <div class="line pl-2">
                             <span class="symbol"><</span>
                             <span class="symbol">/</span>
@@ -1214,28 +1281,6 @@
                             <span class="element">div</span>
                             <span class="symbol">></span>
                         </div>
-                        <div class="line pl-3">
-                            <span class="symbol"><</span>
-                            <span class="element">div </span>
-                            <span class="attribute">class</span>
-                            <span class="symbol">=</span>
-                            <span class="attribute-content">"icon-container"</span>
-                            <span class="symbol">></span>
-                            <span class="symbol"><</span>
-                            <span class="element">i </span>
-                            <span class="attribute">class</span>
-                            <span class="symbol">=</span>
-                            <span class="attribute-content">"far fa-ellipsis-v"</span>
-                            <span class="symbol">></span>
-                            <span class="symbol"><</span>
-                            <span class="symbol">/</span>
-                            <span class="element">i</span>
-                            <span class="symbol">></span>
-                            <span class="symbol"><</span>
-                            <span class="symbol">/</span>
-                            <span class="element">div</span>
-                            <span class="symbol">></span>
-                        </div>
                         <div class="line pl-2">
                             <span class="symbol"><</span>
                             <span class="symbol">/</span>
@@ -1281,7 +1326,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card card-horizontal">
+                    <div class="card card-horizontal removable-card">
                         <span class="card-dismiss"><i class="fas fa-times"></i></span>
                         <div class="card-header">
                             <div class="card-img">
@@ -1510,28 +1555,6 @@
                             <span class="element">div</span>
                             <span class="symbol">></span>
                         </div>
-                        <div class="line pl-3">
-                            <span class="symbol"><</span>
-                            <span class="element">div </span>
-                            <span class="attribute">class</span>
-                            <span class="symbol">=</span>
-                            <span class="attribute-content">"icon-container"</span>
-                            <span class="symbol">></span>
-                            <span class="symbol"><</span>
-                            <span class="element">i </span>
-                            <span class="attribute">class</span>
-                            <span class="symbol">=</span>
-                            <span class="attribute-content">"far fa-ellipsis-v"</span>
-                            <span class="symbol">></span>
-                            <span class="symbol"><</span>
-                            <span class="symbol">/</span>
-                            <span class="element">i</span>
-                            <span class="symbol">></span>
-                            <span class="symbol"><</span>
-                            <span class="symbol">/</span>
-                            <span class="element">div</span>
-                            <span class="symbol">></span>
-                        </div>
                         <div class="line pl-2">
                             <span class="symbol"><</span>
                             <span class="symbol">/</span>
@@ -1558,7 +1581,7 @@
                             <span class="element">div </span>
                             <span class="attribute">class</span>
                             <span class="symbol">=</span>
-                            <span class="attribute-content">"card card-horizontal"</span>
+                            <span class="attribute-content">"card card-horizontal removable-card"</span>
                             <span class="symbol">></span>
                         </div>
                         <div class="line pl-1">
@@ -1774,28 +1797,6 @@
                             <span class="element">div</span>
                             <span class="symbol">></span>
                         </div>
-                        <div class="line pl-3">
-                            <span class="symbol"><</span>
-                            <span class="element">div </span>
-                            <span class="attribute">class</span>
-                            <span class="symbol">=</span>
-                            <span class="attribute-content">"icon-container"</span>
-                            <span class="symbol">></span>
-                            <span class="symbol"><</span>
-                            <span class="element">i </span>
-                            <span class="attribute">class</span>
-                            <span class="symbol">=</span>
-                            <span class="attribute-content">"far fa-ellipsis-v"</span>
-                            <span class="symbol">></span>
-                            <span class="symbol"><</span>
-                            <span class="symbol">/</span>
-                            <span class="element">i</span>
-                            <span class="symbol">></span>
-                            <span class="symbol"><</span>
-                            <span class="symbol">/</span>
-                            <span class="element">div</span>
-                            <span class="symbol">></span>
-                        </div>
                         <div class="line pl-2">
                             <span class="symbol"><</span>
                             <span class="symbol">/</span>
@@ -1813,6 +1814,50 @@
                             <span class="symbol">/</span>
                             <span class="element">div</span>
                             <span class="symbol">></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box">
+                    <div class="code">
+                        <div class="line">
+                            <span class="comment">// Include this JavaScript for card dismiss</span>
+                        </div>
+                        <div class="line">
+                            <span class="element">const </span>
+                            <span class="attribute">removeCard </span>
+                            <span class="symbol">=</span>
+                            <span class="attribute"> document.querySelector</span>
+                            <span class="symbol">(</span>
+                            <span class="attribute-content">".card-dismiss"</span>
+                            <span class="symbol">)</span>
+                            <span class="symbol">;</span>
+                        </div>
+                        <div class="line">
+                            <span class="element">const </span>
+                            <span class="attribute">card </span>
+                            <span class="symbol">=</span>
+                            <span class="attribute"> document.querySelector</span>
+                            <span class="symbol">(</span>
+                            <span class="attribute-content">".removable-card"</span>
+                            <span class="symbol">)</span>
+                            <span class="symbol">;</span>
+                        </div>
+                        <div class="line">
+                            <span class="attribute">removeCard.addEventListener</span>
+                            <span class="symbol">(</span>
+                            <span class="attribute-content">"click"</span>
+                            <span class="symbol">,</span>
+                            <span class="element"> e </span>
+                            <span class="symbol">=> {</span>
+                        </div>
+                        <div class="line pl-1">
+                            <span class="attribute">card.style.display </span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content"> "none"</span>
+                            <span class="symbol">;</span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol">});</span>
                         </div>
                     </div>
                 </div>
@@ -1967,7 +2012,7 @@
                 <p>Images play an important role in any webpage. Though it is not recommended to include a lot of images, but it is still important to use good images wherever required.</p>
                 <h3>Responsive Image</h3>
                 <div class="showcase">
-                    <img src="./img/zenitsu2.jpg" alt="zenitsu" class="img-responsive">
+                    <img src="./img/responsive.jpg" alt="zenitsu" class="img-responsive">
                 </div>
                 <div class="code-box">
                     <div class="code">
@@ -1979,7 +2024,7 @@
                             <span class="element">img </span>
                             <span class="attribute">src</span>
                             <span class="symbol">=</span>
-                            <span class="attribute-content">"./img/zenitsu2.jpg" </span>
+                            <span class="attribute-content">"./img/responsive.jpg" </span>
                             <span class="attribute">alt</span>
                             <span class="symbol">=</span>
                             <span class="attribute-content">"zenitsu" </span>
@@ -2349,6 +2394,1360 @@
                         </div>
                         <div class="line">
                             <span class="symbol">});</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="component-container" id="lists">
+                <h1>LISTS</h1>
+                <p>HTML lists are used to present list of information in well formed and semantic way.</p>
+                <h3>Normal Lists</h3>
+                <div class="showcase">
+                    <ul class="list list-unordered">
+                        <li class="list-item">Item Number One</li>
+                        <li class="list-item">Item Number Two</li>
+                        <li class="list-item">Item Number Three</li>
+                    </ul>
+                    <ol class="list list-ordered">
+                        <li class="list-item">Item Number One</li>
+                        <li class="list-item">Item Number Two</li>
+                        <li class="list-item">Item Number Three</li>
+                    </ol>
+                </div>
+                <div class="code-box">
+                    <div class="code">
+                        <div class="line">
+                            <span class="comment">/* Normal Lists */</span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol"><</span>
+                            <span class="element">ul </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"list list-unordered"</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-1">
+                            <span class="symbol"><</span>
+                            <span class="element">li </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"list-item"</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Item Number One</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">li</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-1">
+                            <span class="symbol"><</span>
+                            <span class="element">li </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"list-item"</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Item Number Two</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">li</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-1">
+                            <span class="symbol"><</span>
+                            <span class="element">li </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"list-item"</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Item Number Three</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">li</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">ul</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol"><</span>
+                            <span class="element">ol </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"list list-ordered"</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-1">
+                            <span class="symbol"><</span>
+                            <span class="element">li </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"list-item"</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Item Number One</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">li</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-1">
+                            <span class="symbol"><</span>
+                            <span class="element">li </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"list-item"</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Item Number Two</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">li</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-1">
+                            <span class="symbol"><</span>
+                            <span class="element">li </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"list-item"</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Item Number Three</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">li</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">ol</span>
+                            <span class="symbol">></span>
+                        </div>
+                    </div>
+                </div>
+                <h3>Stacked List</h3>
+                <div class="showcase">
+                    <ul class="list list-stacked">
+                        <li class="list-item active-item">Item Number One</li>
+                        <li class="list-item">Item Number Two</li>
+                        <li class="list-item">Item Number Three</li>
+                        <li class="list-item">Item Number Four</li>
+                        <li class="list-item">Item Number Five</li>
+                    </ul>
+                </div>
+                <div class="code-box">
+                    <div class="code">
+                        <div class="line">
+                            <span class="comment">/* Normal Lists */</span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol"><</span>
+                            <span class="element">ul </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"list list-stacked"</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-1">
+                            <span class="symbol"><</span>
+                            <span class="element">li </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"list-item"</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Item Number One</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">li</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-1">
+                            <span class="symbol"><</span>
+                            <span class="element">li </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"list-item"</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Item Number Two</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">li</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-1">
+                            <span class="symbol"><</span>
+                            <span class="element">li </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"list-item"</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Item Number Three</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">li</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-1">
+                            <span class="symbol"><</span>
+                            <span class="element">li </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"list-item"</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Item Number Four</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">li</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-1">
+                            <span class="symbol"><</span>
+                            <span class="element">li </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"list-item"</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Item Number Five</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">li</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">ul</span>
+                            <span class="symbol">></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="component-container" id="modal">
+                <h1>MODAL</h1>
+                <p>A modal is a dialog box/popup window that is displayed on top of the current page: Open Modal.</p>
+                <div class="showcase">
+                    <button id="opener">Open Modal</button>
+                    <div class="modal-box">
+                        <div class="modal">
+                            <div class="modal-head">
+                                <h3>Heading</h3>
+                                <p>subtext</p>
+                            </div>
+                            <div class="buttons">
+                                <button class="action">ACTION 1</button>
+                                <button class="action">ACTION 2</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box">
+                    <div class="code">
+                        <div class="line">
+                            <span class="comment">/* Modal */</span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol"><</span>
+                            <span class="element">button </span>
+                            <span class="attribute">id</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"opener"</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Open Modal</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">button</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol"><</span>
+                            <span class="element">div </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"modal-box"</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-1">
+                            <span class="symbol"><</span>
+                            <span class="element">div </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"modal"</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-2">
+                            <span class="symbol"><</span>
+                            <span class="element">div </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"modal-head"</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-3">
+                            <span class="symbol"><</span>
+                            <span class="element">h3</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Heading</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">h3</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-3">
+                            <span class="symbol"><</span>
+                            <span class="element">p</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">subtext</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">p</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-2">
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">div</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-2">
+                            <span class="symbol"><</span>
+                            <span class="element">div </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"buttons"</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-3">
+                            <span class="symbol"><</span>
+                            <span class="element">button </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"action"</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Action 1</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">button</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-3">
+                            <span class="symbol"><</span>
+                            <span class="element">button </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"action"</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Action 2</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">button</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-2">
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">div</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-1">
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">div</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">div</span>
+                            <span class="symbol">></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box">
+                    <div class="code">
+                        <div class="line">
+                            <span class="comment">// Include this JavaScript for short navigation functionality</span>
+                        </div>
+                        <div class="line">
+                            <span class="element">const </span>
+                            <span class="attribute">opener </span>
+                            <span class="symbol">=</span>
+                            <span class="attribute"> document.querySelector</span>
+                            <span class="symbol">(</span>
+                            <span class="attribute-content">"#opener"</span>
+                            <span class="symbol">)</span>
+                            <span class="symbol">;</span>
+                        </div>
+                        <div class="line">
+                            <span class="element">const </span>
+                            <span class="attribute">modalBox </span>
+                            <span class="symbol">=</span>
+                            <span class="attribute"> document.querySelector</span>
+                            <span class="symbol">(</span>
+                            <span class="attribute-content">".modal-box"</span>
+                            <span class="symbol">)</span>
+                            <span class="symbol">;</span>
+                        </div>
+                        <div class="line">
+                            <span class="element">const </span>
+                            <span class="attribute">actions </span>
+                            <span class="symbol">=</span>
+                            <span class="attribute"> document.querySelectorAll</span>
+                            <span class="symbol">(</span>
+                            <span class="attribute-content">".action"</span>
+                            <span class="symbol">)</span>
+                            <span class="symbol">;</span>
+                        </div>
+                        <div class="line">
+                            <span class="attribute">opener.addEventListener</span>
+                            <span class="symbol">(</span>
+                            <span class="attribute-content">"click"</span>
+                            <span class="symbol">,</span>
+                            <span class="element"> e </span>
+                            <span class="symbol">=> {</span>
+                        </div>
+                        <div class="line pl-1">
+                            <span class="attribute">modalBox.style.display </span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content"> "flex"</span>
+                            <span class="symbol">;</span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol">});</span>
+                        </div>
+                        <div class="line">
+                            <span class="attribute">actions.forEach</span>
+                            <span class="symbol">(</span>
+                            <span class="symbol">=> {</span>
+                        </div>
+                        <div class="line pl-1">
+                            <span class="attribute">action </span>
+                            <span class="symbol">=> {</span>
+                        </div>
+                        <div class="line pl-2">
+                            <span class="attribute">action.addEventListener</span>
+                            <span class="symbol">(</span>
+                            <span class="attribute-content">"click"</span>
+                            <span class="symbol">,</span>
+                            <span class="element"> e </span>
+                            <span class="symbol">=> {</span>
+                        </div>
+                        <div class="line pl-3">
+                            <span class="attribute">modalBox.style.display </span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content"> "none"</span>
+                            <span class="symbol">;</span>
+                        </div>
+                        <div class="line pl-2">
+                            <span class="symbol">});</span>
+                        </div>
+                        <div class="line pl-1">
+                            <span class="symbol">}</span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol">});</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="component-container" id="navigations">
+                <h1>NAVIGATIONS</h1>
+                <p>The HTML element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents.</p>
+                <h3>Standard Navigation</h3>
+                <div class="showcase">
+                    <div class="nav-container">
+                        <nav class="nav">
+                            <div class="nav-left">
+                                <div class="nav-icon"><i class="fas fa-hamburger"></i></div>
+                                <h3>Standard</h3>
+                            </div>
+                            <div class="nav-right">
+                                <div class="nav-icon"><i class="fas fa-download"></i></div>
+                                <div class="nav-icon"><i class="fas fa-print"></i></div>
+                                <div class="nav-icon"><i class="fas fa-bookmark"></i></div>
+                            </div>
+                        </nav>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus amet consequatur optio perspiciatis a, cupiditate fugiat voluptate quasi. Laborum modi quo atque expedita voluptatem nam maiores harum voluptatum praesentium quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aspernatur dignissimos illo perspiciatis tempore similique odit nihil culpa repellat minima consectetur distinctio itaque, iste aut, eligendi, asperiores numquam quasi a! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempore facere quo tempora laudantium cum odit eligendi provident, obcaecati expedita beatae delectus omnis repellendus reprehenderit ducimus quibusdam magni officia. Officiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse tempore incidunt ab excepturi corrupti officiis a corporis, assumenda eos necessitatibus soluta accusamus enim explicabo fuga eum fugit at dolores.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus amet consequatur optio perspiciatis a, cupiditate fugiat voluptate quasi. Laborum modi quo atque expedita voluptatem nam maiores harum voluptatum praesentium quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aspernatur dignissimos illo perspiciatis tempore similique odit nihil culpa repellat minima consectetur distinctio itaque, iste aut, eligendi, asperiores numquam quasi a! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempore facere quo tempora laudantium cum odit eligendi provident, obcaecati expedita beatae delectus omnis repellendus reprehenderit ducimus quibusdam magni officia. Officiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse tempore incidunt ab excepturi corrupti officiis a corporis, assumenda eos necessitatibus soluta accusamus enim explicabo fuga eum fugit at dolores.
+                        </p>
+                    </div>
+                </div>
+                <div class="code-box">
+                    <div class="code">
+                        <div class="line">
+                            <span class="comment">/* Standard Navigation */</span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol"><</span>
+                            <span class="element">div </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"nav-container"</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-1">
+                            <span class="symbol"><</span>
+                            <span class="element">nav </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"nav"</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-2">
+                            <span class="symbol"><</span>
+                            <span class="element">div </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"nav-left"</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-3">
+                            <span class="symbol"><</span>
+                            <span class="element">div </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"nav-icon"</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="element">i </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"fas fa-hamburger"</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">i</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">div</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-3">
+                            <span class="symbol"><</span>
+                            <span class="element">h3</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Standard</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">h3</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-2">
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">div</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-2">
+                            <span class="symbol"><</span>
+                            <span class="element">div </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"nav-right"</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-3">
+                            <span class="symbol"><</span>
+                            <span class="element">div </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"nav-icon"</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="element">i </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"fas fa-download"</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">i</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">div</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-3">
+                            <span class="symbol"><</span>
+                            <span class="element">div </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"nav-icon"</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="element">i </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"fas fa-print"</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">i</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">div</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-3">
+                            <span class="symbol"><</span>
+                            <span class="element">div </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"nav-icon"</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="element">i </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"fas fa-bookmark"</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">i</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">div</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-2">
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">div</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-1">
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">nav</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-1">
+                            <span class="symbol"><</span>
+                            <span class="element">p</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Lorem ...</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">p</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">div</span>
+                            <span class="symbol">></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase">
+                    <div class="nav-container">
+                        <nav class="nav fixed">
+                            <div class="nav-left">
+                                <div class="nav-icon"><i class="fas fa-hamburger"></i></div>
+                                <h3>Fixed</h3>
+                            </div>
+                            <div class="nav-right">
+                                <div class="nav-icon"><i class="fas fa-download"></i></div>
+                                <div class="nav-icon"><i class="fas fa-print"></i></div>
+                                <div class="nav-icon"><i class="fas fa-bookmark"></i></div>
+                            </div>
+                        </nav>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus amet consequatur optio perspiciatis a, cupiditate fugiat voluptate quasi. Laborum modi quo atque expedita voluptatem nam maiores harum voluptatum praesentium quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aspernatur dignissimos illo perspiciatis tempore similique odit nihil culpa repellat minima consectetur distinctio itaque, iste aut, eligendi, asperiores numquam quasi a! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempore facere quo tempora laudantium cum odit eligendi provident, obcaecati expedita beatae delectus omnis repellendus reprehenderit ducimus quibusdam magni officia. Officiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse tempore incidunt ab excepturi corrupti officiis a corporis, assumenda eos necessitatibus soluta accusamus enim explicabo fuga eum fugit at dolores.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus amet consequatur optio perspiciatis a, cupiditate fugiat voluptate quasi. Laborum modi quo atque expedita voluptatem nam maiores harum voluptatum praesentium quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aspernatur dignissimos illo perspiciatis tempore similique odit nihil culpa repellat minima consectetur distinctio itaque, iste aut, eligendi, asperiores numquam quasi a! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempore facere quo tempora laudantium cum odit eligendi provident, obcaecati expedita beatae delectus omnis repellendus reprehenderit ducimus quibusdam magni officia. Officiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse tempore incidunt ab excepturi corrupti officiis a corporis, assumenda eos necessitatibus soluta accusamus enim explicabo fuga eum fugit at dolores.
+                        </p>
+                    </div>
+                </div>
+                <div class="code-box">
+                    <div class="code">
+                        <div class="line">
+                            <span class="comment">/* Fixed Navigation */</span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol"><</span>
+                            <span class="element">div </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"nav-container"</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-1">
+                            <span class="symbol"><</span>
+                            <span class="element">nav </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"nav fixed"</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-2">
+                            <span class="symbol"><</span>
+                            <span class="element">div </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"nav-left"</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-3">
+                            <span class="symbol"><</span>
+                            <span class="element">div </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"nav-icon"</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="element">i </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"fas fa-hamburger"</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">i</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">div</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-3">
+                            <span class="symbol"><</span>
+                            <span class="element">h3</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Fixed</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">h3</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-2">
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">div</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-2">
+                            <span class="symbol"><</span>
+                            <span class="element">div </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"nav-right"</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-3">
+                            <span class="symbol"><</span>
+                            <span class="element">div </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"nav-icon"</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="element">i </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"fas fa-download"</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">i</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">div</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-3">
+                            <span class="symbol"><</span>
+                            <span class="element">div </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"nav-icon"</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="element">i </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"fas fa-print"</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">i</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">div</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-3">
+                            <span class="symbol"><</span>
+                            <span class="element">div </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"nav-icon"</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="element">i </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"fas fa-bookmark"</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">i</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">div</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-2">
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">div</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-1">
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">nav</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-1">
+                            <span class="symbol"><</span>
+                            <span class="element">p</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Lorem ...</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">p</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">div</span>
+                            <span class="symbol">></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase">
+                    <div class="nav-container short-container">
+                        <nav class="nav short">
+                            <div class="nav-left">
+                                <div class="nav-icon"><i class="fas fa-hamburger"></i></div>
+                                <h3 class="nav-title">Short</h3>
+                            </div>
+                            <div class="nav-right">
+                                <div class="nav-icon"><i class="fas fa-download"></i></div>
+                            </div>
+                        </nav>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus amet consequatur optio perspiciatis a, cupiditate fugiat voluptate quasi. Laborum modi quo atque expedita voluptatem nam maiores harum voluptatum praesentium quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aspernatur dignissimos illo perspiciatis tempore similique odit nihil culpa repellat minima consectetur distinctio itaque, iste aut, eligendi, asperiores numquam quasi a! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempore facere quo tempora laudantium cum odit eligendi provident, obcaecati expedita beatae delectus omnis repellendus reprehenderit ducimus quibusdam magni officia. Officiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse tempore incidunt ab excepturi corrupti officiis a corporis, assumenda eos necessitatibus soluta accusamus enim explicabo fuga eum fugit at dolores.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus amet consequatur optio perspiciatis a, cupiditate fugiat voluptate quasi. Laborum modi quo atque expedita voluptatem nam maiores harum voluptatum praesentium quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aspernatur dignissimos illo perspiciatis tempore similique odit nihil culpa repellat minima consectetur distinctio itaque, iste aut, eligendi, asperiores numquam quasi a! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempore facere quo tempora laudantium cum odit eligendi provident, obcaecati expedita beatae delectus omnis repellendus reprehenderit ducimus quibusdam magni officia. Officiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse tempore incidunt ab excepturi corrupti officiis a corporis, assumenda eos necessitatibus soluta accusamus enim explicabo fuga eum fugit at dolores.
+                        </p>
+                    </div>
+                </div>
+                <div class="code-box">
+                    <div class="code">
+                        <div class="line">
+                            <span class="comment">/* Fixed Navigation */</span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol"><</span>
+                            <span class="element">div </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"nav-container short-container"</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-1">
+                            <span class="symbol"><</span>
+                            <span class="element">nav </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"nav short"</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-2">
+                            <span class="symbol"><</span>
+                            <span class="element">div </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"nav-left"</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-3">
+                            <span class="symbol"><</span>
+                            <span class="element">div </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"nav-icon"</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="element">i </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"fas fa-hamburger"</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">i</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">div</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-3">
+                            <span class="symbol"><</span>
+                            <span class="element">h3 </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"nav-title"</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Short</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">h3</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-2">
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">div</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-2">
+                            <span class="symbol"><</span>
+                            <span class="element">div </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"nav-right"</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-3">
+                            <span class="symbol"><</span>
+                            <span class="element">div </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"nav-icon"</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="element">i </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"fas fa-download"</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">i</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">div</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-2">
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">div</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-1">
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">nav</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line pl-1">
+                            <span class="symbol"><</span>
+                            <span class="element">p</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Lorem ...</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">p</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">div</span>
+                            <span class="symbol">></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box">
+                    <div class="code">
+                        <div class="line">
+                            <span class="comment">// Include this JavaScript for short navigation functionality</span>
+                        </div>
+                        <div class="line">
+                            <span class="element">const </span>
+                            <span class="attribute">shortContainer </span>
+                            <span class="symbol">=</span>
+                            <span class="attribute"> document.querySelector</span>
+                            <span class="symbol">(</span>
+                            <span class="attribute-content">".short-container"</span>
+                            <span class="symbol">)</span>
+                            <span class="symbol">;</span>
+                        </div>
+                        <div class="line">
+                            <span class="element">const </span>
+                            <span class="attribute">short </span>
+                            <span class="symbol">=</span>
+                            <span class="attribute"> document.querySelector</span>
+                            <span class="symbol">(</span>
+                            <span class="attribute-content">".short"</span>
+                            <span class="symbol">)</span>
+                            <span class="symbol">;</span>
+                        </div>
+                        <div class="line">
+                            <span class="element">const </span>
+                            <span class="attribute">title </span>
+                            <span class="symbol">=</span>
+                            <span class="attribute"> document.querySelector</span>
+                            <span class="symbol">(</span>
+                            <span class="attribute-content">".nav-title"</span>
+                            <span class="symbol">)</span>
+                            <span class="symbol">;</span>
+                        </div>
+                        <div class="line">
+                            <span class="attribute">shortContainer.addEventListener</span>
+                            <span class="symbol">(</span>
+                            <span class="attribute-content">"scroll"</span>
+                            <span class="symbol">,</span>
+                            <span class="element"> e </span>
+                            <span class="symbol">=> {</span>
+                        </div>
+                        <div class="line pl-1">
+                            <span class="element">if</span>
+                            <span class="symbol">(</span>
+                            <span class="attribute">shortContainer.scrollTop </span>
+                            <span class="symbol">> 0) {</span>
+                        </div>
+                        <div class="line pl-2">
+                            <span class="attribute">short.style.width </span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content"> "125px"</span>
+                            <span class="symbol">;</span>
+                        </div>
+                        <div class="line pl-2">
+                            <span class="attribute">short.style.borderRadius </span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content"> "0 0 25px 0"</span>
+                            <span class="symbol">;</span>
+                        </div>
+                        <div class="line pl-3">
+                            <span class="attribute">setTimeout</span>
+                            <span class="symbol">(() => {</span>
+                        </div>
+                        <div class="line pl-4">
+                            <span class="attribute">title.style.display </span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content"> "none"</span>
+                            <span class="symbol">;</span>
+                        </div>
+                        <div class="line pl-3">
+                            <span class="symbol">}, 200);</span>
+                        </div>
+                        <div class="line pl-2">
+                            <span class="symbol">}</span>
+                            <span class="element"> else </span>
+                            <span class="symbol">{</span>
+                        </div>
+                        <div class="line pl-2">
+                            <span class="attribute">short.style.width </span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content"> "100%"</span>
+                            <span class="symbol">;</span>
+                        </div>
+                        <div class="line pl-2">
+                            <span class="attribute">short.style.borderRadius </span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content"> "0"</span>
+                            <span class="symbol">;</span>
+                        </div>
+                        <div class="line pl-3">
+                            <span class="attribute">setTimeout</span>
+                            <span class="symbol">(() => {</span>
+                        </div>
+                        <div class="line pl-4">
+                            <span class="attribute">title.style.display </span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content"> "block"</span>
+                            <span class="symbol">;</span>
+                        </div>
+                        <div class="line pl-3">
+                            <span class="symbol">}, 200);</span>
+                        </div>
+                        <div class="line pl-2">
+                            <span class="symbol">}</span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol">});</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="component-container" id="texts">
+                <h1>TEXT UTILITIES</h1>
+                <p>Text utilities are used for text alignment, styles and overflow things.</p>
+                <h3>Normal Headings</h3>
+                <div class="showcase">
+                    <p class="h1">Heading 1</p>
+                    <p class="h2">Heading 2</p>
+                    <p class="h3">Heading 3</p>
+                    <p class="h4">Heading 4</p>
+                    <p class="h5">Heading 5</p>
+                    <p class="h6">Heading 6</p>
+                </div>
+                <div class="code-box">
+                    <div class="code">
+                        <div class="line">
+                            <span class="comment">/* Normal Headings */</span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol"><</span>
+                            <span class="element">p </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"h1"</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Heading 1</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">p</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol"><</span>
+                            <span class="element">p </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"h2"</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Heading 2</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">p</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol"><</span>
+                            <span class="element">p </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"h3"</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Heading 3</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">p</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol"><</span>
+                            <span class="element">p </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"h4"</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Heading 4</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">p</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol"><</span>
+                            <span class="element">p </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"h5"</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Heading 5</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">p</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol"><</span>
+                            <span class="element">p </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"h6"</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Heading 6</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">p</span>
+                            <span class="symbol">></span>
+                        </div>
+                    </div>
+                </div>
+                <h3>Unique Headings</h3>
+                <div class="showcase">
+                    <p class="h4 first-cap">First Letter Capital</p>
+                    <p class="h4">Unique <span class="grey">Heading</span></p>
+                </div>
+                <div class="code-box">
+                    <div class="code">
+                        <div class="line">
+                            <span class="comment">/* Heading with first letter capital */</span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol"><</span>
+                            <span class="element">p </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"h4 first-cap"</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">First Letter Capital</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">p</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line">
+                            <span class="comment">/* Heading with muted part */</span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol"><</span>
+                            <span class="element">p </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"h4"</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Unique </span>
+                            <span class="symbol"><</span>
+                            <span class="element">span </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"grey"</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Heading</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">span</span>
+                            <span class="symbol">></span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">p</span>
+                            <span class="symbol">></span>
+                        </div>
+                    </div>
+                </div>
+                <h3>Aligned Texts</h3>
+                <div class="showcase aligned-texts">
+                    <p class="para left-text">Left Aligned Text</p>
+                    <p class="para center-text">Center Aligned Text</p>
+                    <p class="para right-text">Right Aligned Text</p>
+                </div>
+                <div class="code-box">
+                    <div class="code">
+                        <div class="line">
+                            <span class="comment">/* Left aligned text */</span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol"><</span>
+                            <span class="element">p </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"para left-text"</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Left Aligned Text</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">p</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line">
+                            <span class="comment">/* Center aligned text */</span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol"><</span>
+                            <span class="element">p </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"para center-text"</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Center Aligned Text</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">p</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line">
+                            <span class="comment">/* Right aligned text */</span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol"><</span>
+                            <span class="element">p </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"para right-text"</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Right Aligned Text</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">p</span>
+                            <span class="symbol">></span>
+                        </div>
+                    </div>
+                </div>
+                <h3>Gray Text and Small Text</h3>
+                <div class="showcase aligned-texts">
+                    <p class="para grey">(Gray Text) Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus laboriosam nostrum debitis asperiores explicabo earum deleniti quidem impedit aspernatur dolores saepe nesciunt provident quod minima voluptatum, voluptate ex ad. Eum.</p>
+                    <p class="small-text">(Small Text) Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus laboriosam nostrum debitis asperiores explicabo earum deleniti quidem impedit aspernatur dolores saepe nesciunt provident quod minima voluptatum, voluptate ex ad. Eum.</p>
+                </div>
+                <div class="code-box">
+                    <div class="code">
+                        <div class="line">
+                            <span class="comment">/* Gray text */</span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol"><</span>
+                            <span class="element">p </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"para grey"</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Lorem ipsum dolor...</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">p</span>
+                            <span class="symbol">></span>
+                        </div>
+                        <div class="line">
+                            <span class="comment">/* Small text */</span>
+                        </div>
+                        <div class="line">
+                            <span class="symbol"><</span>
+                            <span class="element">p </span>
+                            <span class="attribute">class</span>
+                            <span class="symbol">=</span>
+                            <span class="attribute-content">"small-text"</span>
+                            <span class="symbol">></span>
+                            <span class="element-content">Lorem ipsum dolor...</span>
+                            <span class="symbol"><</span>
+                            <span class="symbol">/</span>
+                            <span class="element">p</span>
+                            <span class="symbol">></span>
                         </div>
                     </div>
                 </div>

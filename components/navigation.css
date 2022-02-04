@@ -1,0 +1,52 @@
+.nav-container {
+    position: relative;
+    max-width: 900px;
+    height: 300px;
+    margin: 50px auto;
+    overflow-y: scroll;
+    background: #eee;
+}
+
+.fixed {
+    position: sticky;
+    top: 0;
+}
+
+.short {
+    position: sticky;
+    top: 0;
+    transition: all 0.4s ease-in;
+    width: 100%;
+    border-radius: 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background: #FFC600;
+}
+
+.nav-left,
+.nav-right {
+    display: inherit;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-icon {
+    font-size: 1.25rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nav-icon:hover {
+    background: rgba(0, 0, 0, .2);
+    color: #fff;
+}
