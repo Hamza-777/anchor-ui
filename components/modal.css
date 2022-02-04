@@ -39,7 +39,8 @@
     gap: 10px;
 }
 
-button {
+#opener,
+.action {
     outline: none;
     border: none;
     background: transparent;
@@ -51,6 +52,7 @@ button {
     border-radius: 7px;
 }
 
-button:hover {
+#opener:hover,
+.action:hover {
     background: rgba(0, 0, 0, .15);
 }
