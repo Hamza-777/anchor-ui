@@ -1,5 +1,8 @@
-/* Normal Headings */
+:root {
+    --grey-6: #666;
+}
 
+/* Normal Headings */
 .h1 {
     font-size: 2.5rem;
     line-height: 1.2;
@@ -37,13 +40,12 @@
 }
 
 /* Other Text Utilities */
-
 .first-cap::first-letter {
     font-size: 150%;
 }
 
 .grey {
-    color: #666;
+    color: var(--grey-6);
 }
 
 .para {

@@ -1,6 +1,7 @@
 :root {
     --available-color: #008000;
     --unavailable-color: #ff0000;
+    --white-color: #fff;
 }
 
 .badged-avatar,
@@ -19,7 +20,7 @@
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    border: 2px solid #fff;
+    border: 2px solid var(--white-color);
     display: flex;
     align-items: center;
     justify-content: center;

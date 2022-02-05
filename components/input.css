@@ -1,3 +1,8 @@
+:root {
+    --black-color: #000;
+    --red-color: #ff0000;
+}
+
 .input-container {
     display: flex;
     flex-direction: column;
@@ -11,10 +16,10 @@
     outline: none;
     border: none;
     width: 25rem;
-    border: 2px solid #000;
+    border: 2px solid var(--black-color);
 }
 
 .validation-message {
-    color: #ff0000;
+    color: var(--red-color);
     display: none;
 }

@@ -1,5 +1,6 @@
 :root {
     --primary-color: #FFC600;
+    --ghost-hover: rgba(0, 0, 0, 0.2);
 }
 
 .btn {
@@ -41,7 +42,7 @@
 }
 
 .btn-ghost:hover {
-    background: rgba(0, 0, 0, 0.2);
+    background: var(--ghost-hover);
 }
 
 .btn-link {

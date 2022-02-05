@@ -1,3 +1,11 @@
+:root {
+    --light-black-1: rgba(0, 0, 0, .1);
+    --light-black-5: rgba(0, 0, 0, 0.3);
+    --active-color: #2666CF;
+    --white-color: #fff;
+    --active-hover-shade: rgba(38, 103, 207, 0.8);
+}
+
 .list {
     padding: 0.625rem;
     display: flex;
@@ -22,13 +30,13 @@
 .list-stacked > .list-item {
     padding: 0.625rem 0.875rem;
     width: 25rem;
-    border: 1px solid rgb(0, 0, 0, 0.3);
+    border: 1px solid var(--light-black-5);
     margin-bottom: -1px;
     cursor: pointer;
 }
 
 .list-stacked > .list-item:hover {
-    background: rgba(0, 0, 0, 0.1);
+    background: var(--light-black-1);
 }
 
 .list-stacked > .list-item:first-child {
@@ -41,10 +49,10 @@
 }
 
 .active-item {
-    background: #2666CF;
-    color: #fff;
+    background: var(--active-color);
+    color: var(--white-color);
 }
 
 .active-item:hover {
-    background: rgba(38, 103, 207, 0.8)!important;
+    background: var(--active-hover-shade)!important;
 }

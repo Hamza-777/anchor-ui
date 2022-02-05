@@ -5,7 +5,8 @@
     --dark-primary-color: #4C0027;
     --dark-background: #0F0E0E;
     --dark-code-box: #323232;
-    --element-color: #2f6f9f;
+    --js-function-color: #FFBD35;
+    --element-color: #35589A;
     --attribute-color: #006ee0;
     --attribute-content-color: #d73038;
     --comment-color: #20b2aa;
@@ -441,6 +442,10 @@ a {
 
 .pl-4 {
     padding-left: 6rem;
+}
+
+.js-function {
+    color: var(--js-function-color);
 }
 
 .element {

@@ -1,3 +1,17 @@
+:root {
+    --light-black-1: rgba(0, 0, 0, .1);
+    --light-black-4: rgba(0, 0, 0, 0.24);
+    --light-black-5: rgba(0, 0, 0, 0.3);
+    --light-black-7: rgba(0, 0, 0, .40);
+    --light-black-8: rgba(0, 0, 0, 0.5);
+    --button-text: #6200ee;
+    --button-hover-shade: rgba(99, 0, 238, 0.2);
+    --greyish-text: #323232;
+    --dark-text: #19282F;
+    --white-color: #fff;
+    --badge-color: #ff0000;
+}
+
 img {
     width: 100%;
     height: 100%;
@@ -6,9 +20,9 @@ img {
 .card {
     position: relative;
     border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, .1);
-    border-bottom: 1px solid rgba(0, 0, 0, .40);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 1px solid var(--light-black-1);
+    border-bottom: 1px solid var(--light-black-7);
+    box-shadow: var(--light-black-4) 0px 3px 8px;
     display: flex;
     flex-direction: column;
 }
@@ -53,12 +67,12 @@ img {
 }
 
 .titles>h3 {
-    color: #323232;
+    color: var(--greyish-text);
 }
 
 .titles>h5,
 .card-body>p {
-    color: #19282F;
+    color: var(--dark-text);
 }
 
 .card-body>p {
@@ -82,7 +96,7 @@ img {
 
 .card-tools>.buttons>button {
     background: transparent;
-    color: #6200ee;
+    color: var(--button-text);
     font-size: 14px;
     outline: none;
     border: none;
@@ -94,7 +108,7 @@ img {
 }
 
 .card-tools>.buttons>button:hover {
-    background: rgba(99, 0, 238, 0.2);
+    background: var(--button-hover-shade);
 }
 
 .icons {
@@ -115,11 +129,11 @@ img {
 }
 
 .icon-container:hover {
-    background: rgba(0, 0, 0, 0.3);
+    background: var(--light-black-5);
 }
 
 .icon-container>i {
-    color: #19282F;
+    color: var(--dark-text);
     font-size: 22px;
 }
 
@@ -135,7 +149,7 @@ img {
 
 .card-badge {
     left: 5px;
-    background: #ff0000;
+    background: var(--badge-color);
     border-radius: 2rem;
 }
 
@@ -143,7 +157,7 @@ img {
     right: 5px;
     width: 2.5rem;
     height: 2.5rem;
-    background: rgba(0, 0, 0, .40);
+    background: var(--light-black-7);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -152,7 +166,7 @@ img {
 }
 
 .card-dismiss:hover {
-    background: rgba(0, 0, 0, .50);
+    background: var(--light-black-8);
 }
 
 .overlay-card,
@@ -170,7 +184,7 @@ img {
     opacity: 0;
     display: flex;
     align-items: center;
-    background: rgba(0, 0, 0, .1);
+    background: var(--light-black-1);
 }
 
 .overlay-text:hover {

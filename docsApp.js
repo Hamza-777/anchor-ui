@@ -1,9 +1,7 @@
+// Dark Mode
 const darkMode = document.querySelector('.dark-mode');
 const darkBtn = document.querySelector('.changer');
-const open = document.querySelector('.open');
-const close = document.querySelector('.close');
 const navbar = document.querySelector('.navbar');
-const sidebar = document.querySelector('.sidebar');
 const footer = document.querySelector('.footer');
 const body = document.querySelector('body');
 const codeboxes = document.querySelectorAll('.code-box');
@@ -25,6 +23,11 @@ darkMode.addEventListener('click', e => {
         componentContainer.classList.toggle('dark-container');
     });
 });
+
+// Sidebar Open and Close
+const open = document.querySelector('.open');
+const close = document.querySelector('.close');
+const sidebar = document.querySelector('.sidebar');
 
 open.addEventListener('click', e => {
     sidebar.style.display = 'block';
@@ -86,11 +89,11 @@ shortContainer.addEventListener('scroll', e => {
 });
 
 // Modal JS
-const opener = document.querySelector('#opener');
+const modalOpener = document.querySelector('#modal-opener');
 const modalBox = document.querySelector('.modal-box');
 const actions = document.querySelectorAll('.action');
 
-opener.addEventListener('click', e => {
+modalOpener.addEventListener('click', e => {
     modalBox.style.display = 'flex';
 });
 
