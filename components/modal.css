@@ -20,6 +20,7 @@
     inset: 0;
     display: none;
     background: var(--light-black-5);
+    z-index: 5;
 }
 
 .modal {
