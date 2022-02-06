@@ -1,13 +1,5 @@
-:root {
-    --light-black-3: rgba(0, 0, 0, 0.2);
-    --grey-3: #333;
-    --white-color: #fff;
-    --button-text-color: #8b4edb;
-    --snack-opener-shade: rgba(115, 64, 182, 0.2);
-}
-
 #snack-opener {
-    background: var(--snack-opener-shade);
+    background: var(--opener-shade);
     border-radius: 8px;
 }
 
@@ -19,7 +11,7 @@
     display: flex;
     align-items: center;
     gap: 25px;
-    background: var(--grey-3);
+    background: var(--grey-3-color);
     color: var(--white-color);
     padding: 10px;
     border-radius: 5px;

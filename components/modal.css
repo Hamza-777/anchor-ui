@@ -1,15 +1,5 @@
-:root {
-    --light-black-2: rgba(0, 0, 0, 0.15);
-    --light-black-5: rgba(0, 0, 0, 0.3);
-    --light-black-6: rgba(0, 0, 0, 0.35);
-    --grey-5: #555;
-    --white-color: #fff;
-    --button-text-color: #8b4edb;
-    --modal-opener-shade: rgba(139, 78, 219, 0.178);
-}
-
 #modal-opener {
-    background: var(--modal-opener-shade);
+    background: var(--opener-shade);
 }
 
 .modal-box {
@@ -40,7 +30,7 @@
 }
 
 .modal-head > p {
-    color: var(--grey-5);
+    color: var(--grey-5-color);
     font-size: 0.9rem;
 }
 

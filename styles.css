@@ -12,3 +12,44 @@
 @import "./components/rating.css";
 @import "./components/snackbar.css";
 @import "./components/textutilities.css";
+
+:root {
+    --primary-color: #FFC600;
+    --starred-color: #FFC900;
+    --danger-color: #FF6464;
+    --success-color: #91C483;
+    --warning-color: #FFCC1D;
+    --active-color: #2666CF;
+    --green-color: #008000;
+    --red-color: #ff0000;
+    --greyish-text: #323232;
+    --black-color: #000;
+    --grey-1-color: #111;
+    --grey-2-color: #222;
+    --grey-3-color: #333;
+    --grey-4-color: #444;
+    --grey-5-color: #555;
+    --grey-6-color: #666;
+    --grey-7-color: #777;
+    --grey-8-color: #888;
+    --grey-9-color: #999;
+    --grey-a-color: #aaa;
+    --grey-b-color: #bbb;
+    --grey-c-color: #ccc;
+    --grey-d-color: #ddd;
+    --grey-e-color: #eee;
+    --white-color: #fff;
+    --light-black-1: rgba(0, 0, 0, .1);
+    --light-black-2: rgba(0, 0, 0, 0.15);
+    --light-black-3: rgba(15, 12, 12, 0.2);
+    --light-black-4: rgba(0, 0, 0, 0.24);
+    --light-black-5: rgba(0, 0, 0, 0.3);
+    --light-black-6: rgba(0, 0, 0, 0.35);
+    --light-black-7: rgba(0, 0, 0, .40);
+    --light-black-8: rgba(0, 0, 0, 0.5);
+    --button-text-color: #6200ee;
+    --dark-text: #19282F;
+    --opener-shade: rgba(115, 64, 182, 0.2);
+    --active-hover-shade: rgba(38, 103, 207, 0.8);
+    --button-hover-shade: rgba(99, 0, 238, 0.2);
+}

@@ -1,15 +1,7 @@
-:root {
-    --danger-color: #FF6464;
-    --success-color: #91C483;
-    --warning-color: #FFCC1D;
-    --dark-color: #111;
-    --light-color: #ccc;
-}
-
 .alert {
     min-width: 25rem;
     padding: 0.625rem 1.5rem;
-    border: 2px solid #000;
+    border: 2px solid var(--black-color);
     font-size: 1rem;
     font-weight: 600;
 }
@@ -20,30 +12,30 @@
 
 .alert-danger {
     background: var(--danger-color);
-    color: #fff;
+    color: var(--white-color);
     border: none;
 }
 
 .alert-warning {
     background: var(--warning-color);
-    color: #fff;
+    color: var(--white-color);
     border: none;
 }
 
 .alert-success {
     background: var(--success-color);
-    color: #fff;
+    color: var(--white-color);
     border: none;
 }
 
 .alert-dark {
-    background: var(--dark-color);
-    color: #fff;
+    background: var(--grey-1-color);
+    color: var(--white-color);
     border: none;
 }
 
 .alert-light {
-    background: var(--light-color);
+    background: var(--grey-c-color);
 }
 
 .alert-dismiss {
