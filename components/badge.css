@@ -1,9 +1,3 @@
-:root {
-    --available-color: #008000;
-    --unavailable-color: #ff0000;
-    --white-color: #fff;
-}
-
 .badged-avatar,
 .badged-icon {
     position: relative;
@@ -27,11 +21,11 @@
 }
 
 .badge-available {
-    background: var(--available-color);
+    background: var(--green-color);
 }
 
 .badge-unavailable {
-    background: var(--unavailable-color);
+    background: var(--red-color);
 }
 
 .badge-around {

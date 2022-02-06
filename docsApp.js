@@ -104,3 +104,16 @@ actions.forEach(
         });
     }
 );
+
+// Snackbar JS
+const snackOpener = document.querySelector('#snack-opener');
+const snackbar = document.querySelector('.snackbar');
+const snackCloser = document.querySelector('.snack-closer');
+
+snackOpener.addEventListener('click', e => {
+    snackbar.style.display = 'flex';
+});
+
+snackCloser.addEventListener('click', e => {
+    snackbar.style.display = 'none';
+});

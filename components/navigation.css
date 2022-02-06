@@ -1,17 +1,10 @@
-:root {
-    --light-black-3: rgba(0, 0, 0, 0.2);
-    --primary-color: #FFC600;
-    --grey-e: #eee;
-    --white-color: #fff;
-}
-
 .nav-container {
     position: relative;
     max-width: 56.25rem;
     height: 18.75rem;
     margin: 3rem auto;
     overflow-y: scroll;
-    background: var(--grey-e);
+    background: var(--grey-e-color);
 }
 
 .fixed {

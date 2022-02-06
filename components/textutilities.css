@@ -1,7 +1,3 @@
-:root {
-    --grey-6: #666;
-}
-
 /* Normal Headings */
 .h1 {
     font-size: 2.5rem;
@@ -45,7 +41,7 @@
 }
 
 .grey {
-    color: var(--grey-6);
+    color: var(--grey-6-color);
 }
 
 .para {
