@@ -447,6 +447,10 @@ a {
     padding-left: 6rem;
 }
 
+.pl-5 {
+    padding-left: 7.5rem;
+}
+
 .js-function {
     color: var(--js-function-color);
 }
