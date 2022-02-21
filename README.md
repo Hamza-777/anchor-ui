@@ -3,6 +3,8 @@
 
 Starting a new project? Struggling with responsiveness? Get Started with Anchor-UI to get responsive components for your project.
 
+![Preview](/preview/preview.gif)
+
 </div>
 
 ## Quick Setup
