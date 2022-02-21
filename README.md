@@ -10,10 +10,7 @@ Starting a new project? Struggling with responsiveness? Get Started with Anchor-
 Copy-paste the stylesheet `<link>` tag into your HTML `<head>` tag before all other stylesheets to load CSS.
 
 ```html
-<link
-  rel="stylesheet"
-  href="https://fervent-hermann-27c6ca.netlify.app/styles.css"
-/>
+<link rel="stylesheet" href="https://anchor-ui.netlify.app/styles.css" />
 ```
 
 Some of Anchor-UI components like a couple of Navigations, Modal, Snackbar, etc require the use of JavaScript to work. For them to work, respective JavaScript code is provided in the documentation itself, copy and paste that code in your JS file.
@@ -50,7 +47,7 @@ Alerts are used to give status, feedback or information to the users based on ce
 - Light Alert
 - Dismiss Alert
 
-Get these on https://fervent-hermann-27c6ca.netlify.app/docs.html#alert
+Get these on https://anchor-ui.netlify.app/docs.html#alert
 
 ---
 
@@ -60,7 +57,7 @@ Avatars can be used to display user's profile picture.
 
 - Various Sized Avatars
 
-Get these on https://fervent-hermann-27c6ca.netlify.app/docs.html#avatar
+Get these on https://anchor-ui.netlify.app/docs.html#avatar
 
 ---
 
@@ -71,7 +68,7 @@ Badges are used to display status or notifications.
 - Avatars with badges
 - Icons with badges
 
-Get these on https://fervent-hermann-27c6ca.netlify.app/docs.html#badge
+Get these on https://anchor-ui.netlify.app/docs.html#badge
 
 ---
 
@@ -84,7 +81,7 @@ Buttons are used to perform actions on click by users.
 - Buttons with icons
 - Floating Action Buttons
 
-Get these on https://fervent-hermann-27c6ca.netlify.app/docs.html#button
+Get these on https://anchor-ui.netlify.app/docs.html#button
 
 ---
 
@@ -96,7 +93,7 @@ CSS cards are great for organizing and enhancing a website's user interface. Eac
 - Cards with badges and dismiss
 - Cards with text overlays and text only cards
 
-Get these on https://fervent-hermann-27c6ca.netlify.app/docs.html#card
+Get these on https://anchor-ui.netlify.app/docs.html#card
 
 ---
 
@@ -107,7 +104,7 @@ CSS grid layout or CSS grid creates complex responsive web design grid layouts m
 - Grid with 2 columns
 - Grid with 3 columns
 
-Get these on https://fervent-hermann-27c6ca.netlify.app/docs.html#grids
+Get these on https://anchor-ui.netlify.app/docs.html#grids
 
 ---
 
@@ -118,7 +115,7 @@ Images play an important role in any webpage. Though it is not recommended to in
 - Responsive Image
 - Round Image
 
-Get these on https://fervent-hermann-27c6ca.netlify.app/docs.html#image
+Get these on https://anchor-ui.netlify.app/docs.html#image
 
 ---
 
@@ -130,7 +127,7 @@ The input HTML element is used to create interactive controls for web-based form
 - Textarea
 - Input with validation
 
-Get these on https://fervent-hermann-27c6ca.netlify.app/docs.html#input
+Get these on https://anchor-ui.netlify.app/docs.html#input
 
 ---
 
@@ -141,7 +138,7 @@ HTML lists are used to present list of information in well formed and semantic w
 - Normal List
 - Stacked List
 
-Get these on https://fervent-hermann-27c6ca.netlify.app/docs.html#lists
+Get these on https://anchor-ui.netlify.app/docs.html#lists
 
 ---
 
@@ -151,7 +148,7 @@ A modal is a dialog box/popup window that is displayed on top of the current pag
 
 - Modal
 
-Get this on https://fervent-hermann-27c6ca.netlify.app/docs.html#modal
+Get this on https://anchor-ui.netlify.app/docs.html#modal
 
 ---
 
@@ -164,7 +161,7 @@ The HTML element represents a section of a page whose purpose is to provide navi
 - Short Navigation
 - Fixed Navigation With Submenu
 
-Get these on https://fervent-hermann-27c6ca.netlify.app/docs.html#navigations
+Get these on https://anchor-ui.netlify.app/docs.html#navigations
 
 ---
 
@@ -175,7 +172,7 @@ Ratings are used to depict the quality of a product or how much something is lik
 - Star Rating
 - Bar Rating
 
-Get these on https://fervent-hermann-27c6ca.netlify.app/docs.html#ratings
+Get these on https://anchor-ui.netlify.app/docs.html#ratings
 
 ---
 
@@ -186,7 +183,7 @@ A range slider is an input field that merchants can use to select a numeric valu
 - Range Slider
 - Range Slider With Icon
 
-Get these on https://fervent-hermann-27c6ca.netlify.app/docs.html#sliders
+Get these on https://anchor-ui.netlify.app/docs.html#sliders
 
 ---
 
@@ -196,7 +193,7 @@ Snackbars provide brief feedback about an operation through a message at the bot
 
 - Snackbar
 
-Get this on https://fervent-hermann-27c6ca.netlify.app/docs.html#snackbar
+Get this on https://anchor-ui.netlify.app/docs.html#snackbar
 
 ---
 
@@ -209,7 +206,7 @@ Text utilities are used for text alignment, styles and overflow things.
 - Aligned Texts
 - Gray Text and Small Text
 
-Get these on https://fervent-hermann-27c6ca.netlify.app/docs.html#texts
+Get these on https://anchor-ui.netlify.app/docs.html#texts
 
 ---
 
