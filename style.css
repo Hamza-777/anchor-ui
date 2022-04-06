@@ -421,14 +421,16 @@ a {
 }
 
 .line {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
+    display: inline-block;
+    font-size: 0;
 }
 
 .line > span {
+    display: inline-block;
     font-family: var(--code-box-font);
     white-space: pre;
+    word-spacing: 0;
+    font-size: 1rem;
 }
 
 .pl-1 {
